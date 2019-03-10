@@ -1,0 +1,26 @@
+
+.bg{
+    background-color: rgb(40, 116, 240);
+}
+.row{
+    margin: 0;
+}
+
+label{
+    color: white !important;
+}
+
+.box-class{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.img-class{
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+}
+
+a.menu_links { 
+    cursor: pointer; 
+}

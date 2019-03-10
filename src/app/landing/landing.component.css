@@ -1,0 +1,29 @@
+.padding{
+    padding: 3px;
+}
+.bg{
+    background-color: rgb(40, 116, 240);
+}
+.row{
+    margin: 0;
+}
+
+a{
+    color: white !important;
+}
+
+.box-class{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.img-class{
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.bg-blue{
+    background-color: #2874f0;
+}
