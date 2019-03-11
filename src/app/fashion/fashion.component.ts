@@ -6,17 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fashion.component.css']
 })
 export class FashionComponent implements OnInit {
-
+  private showMen: boolean = false;
+  private showWomen: boolean = false;
+  private showKids: boolean = false;
   constructor() { }
 
   ngOnInit() {
-    console.log("working")
+
   }
 
-  clickMen(event:HTMLInputElement){
-    let showMen: boolean = true;
-    showMen != showMen;
-    console.log("****MENsss******",event);
+  clickMen(){
+    this.showMen =! this.showMen;
+  }
+
+  clickWomen(){
+    this.showWomen =! this.showWomen;
+  }
+
+  clickKids(){
+    this.showKids =! this.showKids;
   }
 
 }

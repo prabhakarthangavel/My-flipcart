@@ -2,31 +2,53 @@
 
   <div class="row">
     <div class="column box-class">
-      <a class="menu_links" onClick="clickMen(event)">
+      <a class="menu_links" (click)="clickMen()">
         <span><img class="img-responsive img-class" src="assets/images/mensFashion.jpg">
         </span>
         <label>Men</label>
       </a>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="column box-class">
-      <a routerLink="/">
-        <span><img class="img-responsive img-class" src="assets/images/womenFashion.jpeg">
-        </span>
-        <label>Women</label>
-      </a>
+    <div *ngIf="showMen" class="column box-class">
+      <div class="whiteDiv">
+        <span><img class="img-responsive img-class-small" src="assets/images/accessories.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/clothing.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/footwear.jpg"></span>
+      </div>
     </div>
   </div>
 
   <div class="row">
     <div class="column box-class">
-      <a routerLink="/">
+      <a class="menu_links" (click)="clickWomen()">
+        <span><img class="img-responsive img-class" src="assets/images/womenFashion.jpg">
+        </span>
+        <label>Women</label>
+      </a>
+    </div>
+    <div *ngIf="showWomen" class="column box-class">
+      <div class="whiteDiv">
+        <span><img class="img-responsive img-class-small" src="assets/images/womenAccessories.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/womenClothing.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/womenFootwear.jpg"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column box-class">
+      <a class="menu_links" (click)="clickKids()">
         <span><img class="img-responsive img-class" src="assets/images/kidsFashion.jpg">
         </span>
         <label>Kids</label>
       </a>
     </div>
+    <div *ngIf="showKids" class="column box-class">
+      <div class="whiteDiv">
+        <span><img class="img-responsive img-class-small" src="assets/images/boys.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/girls.jpg"></span>
+        <span><img class="img-responsive img-class-small" src="assets/images/infants.jpg"></span>
+      </div>
+    </div>
   </div>
+
 </div>

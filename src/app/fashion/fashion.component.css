@@ -21,6 +21,16 @@ label{
     padding: 10px;
 }
 
+.img-class-small{
+    height: 25%;
+    width: 30%;
+    padding: 10px;
+}
+
+.whiteDiv{
+     margin: 10px;
+}
+
 a.menu_links { 
     cursor: pointer; 
 }
