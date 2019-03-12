@@ -7,12 +7,18 @@
         </span>
         <label>Men</label>
       </a>
-    </div>
-    <div *ngIf="showMen" class="column box-class">
+    </div> 
+    <div *ngIf="showMen" class="column box-class"> 
       <div class="whiteDiv">
-        <span><img class="img-responsive img-class-small" src="assets/images/accessories.jpg"></span>
-        <span><img class="img-responsive img-class-small" src="assets/images/clothing.jpg"></span>
-        <span><img class="img-responsive img-class-small" src="assets/images/footwear.jpg"></span>
+        <a routerLink="/fashion/mensAccessories">
+            <span><img class="img-responsive img-class-small" src="assets/images/accessories.jpg"></span>
+        </a>
+        <a routerLink="/fashion/mensClothing">
+          <span><img class="img-responsive img-class-small" src="assets/images/clothing.jpg"></span>
+        </a>
+        <a routerLink="/fashion/mensFootwear">
+          <span><img class="img-responsive img-class-small" src="assets/images/footwear.jpg"></span>
+        </a>
       </div>
     </div>
   </div>

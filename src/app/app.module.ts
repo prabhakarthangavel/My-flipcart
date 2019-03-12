@@ -9,6 +9,10 @@ import { FashionComponent } from './fashion/fashion.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { HomeComponent } from './home/home.component';
 import { OffersComponent } from './offers/offers.component';
+import { MensFashionModule } from './fashion/fashion.module';
+// import { AccessoriesComponent } from './fashion/mensFashion/accessories/accessories.component';
+// import { ClothingComponent } from './fashion/mensFashion/clothing/clothing.component';
+// import { FootwearComponent } from './fashion/mensFashion/footwear/footwear.component';
 
 @NgModule({
   declarations: [
@@ -18,17 +22,22 @@ import { OffersComponent } from './offers/offers.component';
     FashionComponent,
     ElectronicsComponent,
     HomeComponent,
-    OffersComponent
+    OffersComponent,
+    // AccessoriesComponent,
+    // ClothingComponent,
+    // FootwearComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MensFashionModule,
     RouterModule.forRoot([
       { path: '', component:LandingComponent},
       { path: 'fashion', component:FashionComponent},
       { path: 'electronics',component:ElectronicsComponent},
       { path: 'home', component:HomeComponent},
-      { path: 'offers', component:OffersComponent}
+      { path: 'offers', component:OffersComponent},
+      // { path: 'fashion/mensAccessories', component:AccessoriesComponent}
     ])
   ],
   providers: [],
