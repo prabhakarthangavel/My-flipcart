@@ -10,9 +10,6 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { HomeComponent } from './home/home.component';
 import { OffersComponent } from './offers/offers.component';
 import { MensFashionModule } from './fashion/fashion.module';
-// import { AccessoriesComponent } from './fashion/mensFashion/accessories/accessories.component';
-// import { ClothingComponent } from './fashion/mensFashion/clothing/clothing.component';
-// import { FootwearComponent } from './fashion/mensFashion/footwear/footwear.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +20,7 @@ import { MensFashionModule } from './fashion/fashion.module';
     ElectronicsComponent,
     HomeComponent,
     OffersComponent,
-    // AccessoriesComponent,
-    // ClothingComponent,
-    // FootwearComponent
+
   ],
   imports: [
     BrowserModule,
@@ -37,7 +32,6 @@ import { MensFashionModule } from './fashion/fashion.module';
       { path: 'electronics',component:ElectronicsComponent},
       { path: 'home', component:HomeComponent},
       { path: 'offers', component:OffersComponent},
-      // { path: 'fashion/mensAccessories', component:AccessoriesComponent}
     ])
   ],
   providers: [],

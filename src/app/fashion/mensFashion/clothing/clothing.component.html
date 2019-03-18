@@ -1,3 +1,18 @@
-<p>
-  clothing works!
-</p>
+<div>
+  <div class="col">
+      <div class="row">
+          <ng-container *ngFor="let p of products; let i = index" >
+            <div class="col border">
+              <span><img class="img-responsive" src={{p}}></span>
+              <div class="text">
+                {{ (str.length>10)? (str | slice:0:20)+'..':(str) }}
+              </div>
+              <div class="price">
+                $50
+              </div>
+              <!-- <app-product-card [product]="p" [shopping-Cart]="cart"></app-product-card> -->
+            </div>
+          </ng-container>   
+        </div>
+    </div>
+</div> 

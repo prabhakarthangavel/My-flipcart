@@ -2,10 +2,14 @@
     <div class="col">
         <div class="row">
             <ng-container *ngFor="let p of products; let i = index" >
-              <div class="col">
+              <div class="col border">
                 <span><img class="img-responsive" src={{p}}></span>
-                <h2>T-shirt</h2>
-                <label>$50</label>
+                <div class="text">
+                  T-shirt asdfjalskdfjaskfdjasdfuasd
+                </div>
+                <div class="price">
+                  $50
+                </div>
                 <!-- <app-product-card [product]="p" [shopping-Cart]="cart"></app-product-card> -->
               </div>
             </ng-container>   
