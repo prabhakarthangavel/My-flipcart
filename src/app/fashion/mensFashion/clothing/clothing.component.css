@@ -1,6 +1,12 @@
 .border{
     border: 1px solid transparent; 
     height: 100%;
+    max-width: 50%;
+    padding-top: 10px;
+}
+
+.col{
+    width:100% !important;
 }
 
 .text{
@@ -16,4 +22,25 @@ white-space: nowrap;
 vertical-align: middle;
 font-size: 15px;
 font-weight: bold;
+}
+
+.filterPannel{
+    width: 100%;
+    background-color: #fff;
+    height: 48px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: flex;
+}
+
+.portion{
+    border-right: 1px solid #e0e0e0;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
 }

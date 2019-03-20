@@ -1,18 +1,28 @@
 <div>
   <div class="col">
-      <div class="row">
-          <ng-container *ngFor="let p of products; let i = index" >
-            <div class="col border">
-              <span><img class="img-responsive" src={{p}}></span>
-              <div class="text">
-                {{ (str.length>10)? (str | slice:0:20)+'..':(str) }}
-              </div>
-              <div class="price">
-                $50
-              </div>
-              <!-- <app-product-card [product]="p" [shopping-Cart]="cart"></app-product-card> -->
-            </div>
-          </ng-container>   
+    <div class="row">
+      <div class="filterPannel">
+        <div class="portion">
+          <img src="/assets/images/sort.svg">
+          <label style="margin:2%;">Sort</label>
         </div>
+        <div class="portion">
+          <img src="/assets/images/filter.svg">
+          <label style="margin:2%;">Filter</label>
+        </div>
+      </div>
+      <ng-container *ngFor="let p of products; let i = index">
+        <div class="col border">
+          <span><img style="width:120px; height: 180px;" class="img-responsive" src={{p.imageURL}}></span>
+          <div class="text">
+            {{ (p.name.length>10)? (p.name | slice:0:20)+'..':(p.name) }}
+          </div>
+          <div class="price">
+            ₹{{p.price}}
+          </div>
+          <!-- <app-product-card [product]="p" [shopping-Cart]="cart"></app-product-card> -->
+        </div>
+      </ng-container>
     </div>
-</div> 
+  </div>
+</div>
