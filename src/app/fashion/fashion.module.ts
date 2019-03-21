@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccessoriesComponent } from './mensFashion/accessories/accessories.component';
 import { ClothingComponent } from './mensFashion/clothing/clothing.component';
 import { FootwearComponent } from './mensFashion/footwear/footwear.component';
+import { SortFilterComponent } from '../shared/sort-filter/sort-filter.component';
 
 const routes: Routes = [
     { path: 'fashion/mensAccessories', component: AccessoriesComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
     declarations: [
         AccessoriesComponent,
         ClothingComponent,
-        FootwearComponent
+        FootwearComponent,
+        SortFilterComponent,
       ],
   imports: [
     BrowserModule,
