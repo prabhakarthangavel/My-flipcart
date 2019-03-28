@@ -1,10 +1,36 @@
-    <div class="filterPannel">
-      <div class="portion">
+<div class="filterPannel">
+  <div class="portion">
+    <a data-toggle="modal" data-target="#myModal">
         <img src="/assets/images/sort.svg">
-        <label style="margin:2%;">Sort</label>
+        <span style="margin:2%;">Sort</span>
+    </a>
+  </div>
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer row">
+              <div class="col-4" style="text-align:center;">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              </div>
+              <div class="col-4">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="portion">
-        <img src="/assets/images/filter.svg">
-        <label style="margin:2%;">Filter</label>
-      </div>
-    </div>
+
+  <div class="portion">
+    <img src="/assets/images/filter.svg">
+    <label style="margin:2%;">Filter</label>
+  </div>
+</div>

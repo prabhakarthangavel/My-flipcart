@@ -22,3 +22,12 @@
 .col{
     width:100% !important;
 }
+
+a{
+    color: black;
+}
+
+/* a.label{
+    display: inline-block;
+    color: black !important;
+} */
