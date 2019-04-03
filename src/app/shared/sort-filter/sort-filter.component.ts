@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SortFilterService } from '../sort-filter.service';
 
 @Component({
   selector: 'app-sort-filter',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sort-filter.component.css']
 })
 export class SortFilterComponent implements OnInit {
-
-  constructor() { }
+  public sortOrder:string;
+  
+  constructor(private sortFilter:SortFilterService) { }
 
   ngOnInit() {
   }
 
+  sort(){
+    this.sortFilter.setSort(this.sortOrder);
+  }
+
+  radioChangeHandler(event){
+    this.sortOrder = event.target.value;
+  }
 }

@@ -11,6 +11,7 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { HomeComponent } from './home/home.component';
 import { OffersComponent } from './offers/offers.component';
 import { MensFashionModule } from './fashion/fashion.module';
+import { OrderByPipePipe } from './shared/order-by-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MensFashionModule } from './fashion/fashion.module';
     ElectronicsComponent,
     HomeComponent,
     OffersComponent,
+    OrderByPipePipe,
 
   ],
   imports: [

@@ -27,6 +27,10 @@ a{
     color: black;
 }
 
+.modal-dialog{
+    margin-top: 50%;
+}
+
 /* a.label{
     display: inline-block;
     color: black !important;

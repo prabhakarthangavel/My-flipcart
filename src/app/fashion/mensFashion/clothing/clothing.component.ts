@@ -1,21 +1,46 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Pipe } from '@angular/core';
 import { MensFashionClothingService } from './mens-fashion-clothing.service';
+import { SortFilterService } from '../../../shared/sort-filter.service';
 
 @Component({
   selector: 'app-clothing',
   templateUrl: './clothing.component.html',
-  styleUrls: ['./clothing.component.css']
+  styleUrls: ['./clothing.component.css'],
 })
 export class ClothingComponent implements OnInit {
-  public products: any;
-  constructor(private clothingService:MensFashionClothingService) { }
+  private products: any;
+  public sortOrder; 
+  public sortedArray:any = [];
+  
 
+  constructor(private clothingService:MensFashionClothingService,
+              private sortFilter:SortFilterService) { }
+ 
   ngOnInit() {
     this.clothingService.getItems().subscribe(
       data => {
         this.products = data;
         console.log("THis.products",this.products);
-    })
+        this.sortedArray = this.bubbleSort(this.products); 
+        console.log("This SORTEDARRAY",this.sortedArray);
+      })
+        
+  }
+
+  bubbleSort(price) {
+    var done = false;
+    while (!done) {
+      done = true;
+      for (var i = 1; i < price.length; i += 1) {
+        if (price[i - 1].price > price[i].price) {
+          done = false;
+          var tmp = price[i - 1].price;
+          price[i - 1].price = price[i].price;
+          price[i].price = tmp;
+        }
+      }
+    }
+    return price; 
   }
 
   post(){
@@ -25,6 +50,10 @@ export class ClothingComponent implements OnInit {
       data =>{
         console.log("***Put method******",data);
       })
+  }
+
+  sort(){
+    this.sortOrder = this.sortFilter.getSort();
   }
 
 }
