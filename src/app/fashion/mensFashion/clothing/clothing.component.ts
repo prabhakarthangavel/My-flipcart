@@ -1,6 +1,5 @@
 import { Component, OnInit,Pipe } from '@angular/core';
 import { MensFashionClothingService } from './mens-fashion-clothing.service';
-import { SortFilterService } from '../../../shared/sort-filter.service';
 
 @Component({
   selector: 'app-clothing',
@@ -13,16 +12,13 @@ export class ClothingComponent implements OnInit {
   public sortedArray:any = [];
   
 
-  constructor(private clothingService:MensFashionClothingService,
-              private sortFilter:SortFilterService) { }
+  constructor(private clothingService:MensFashionClothingService) { }
  
   ngOnInit() {
     this.clothingService.getItems().subscribe(
       data => {
         this.products = data;
         console.log("THis.products",this.products);
-        this.sortedArray = this.bubbleSort(this.products); 
-        console.log("This SORTEDARRAY",this.sortedArray);
       })
         
   }
@@ -52,8 +48,17 @@ export class ClothingComponent implements OnInit {
       })
   }
 
-  sort(){
-    this.sortOrder = this.sortFilter.getSort();
+  getNotification(event){
+    this.sortOrder = event;
+    this.sortArray();
   }
 
+  sortArray(){
+    if(this.sortOrder == "assending"){
+      this.sortedArray = this.products.sort((a, b) => a.price - b.price) 
+    }
+    else{
+      this.sortedArray = this.products.sort((a, b) => b.price - a.price)
+    }
+  }
 }

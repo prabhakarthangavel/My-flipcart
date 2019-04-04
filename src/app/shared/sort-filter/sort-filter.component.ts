@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SortFilterService } from '../sort-filter.service';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sort-filter',
@@ -8,14 +7,15 @@ import { SortFilterService } from '../sort-filter.service';
 })
 export class SortFilterComponent implements OnInit {
   public sortOrder:string;
+  @Output() notifyParent: EventEmitter<any> = new EventEmitter();
   
-  constructor(private sortFilter:SortFilterService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  sort(){
-    this.sortFilter.setSort(this.sortOrder);
+  sendNotification(){
+    this.notifyParent.emit(this.sortOrder);
   }
 
   radioChangeHandler(event){
