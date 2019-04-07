@@ -1,0 +1,28 @@
+.img{
+    width:10px; 
+    height: 15px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.navbar{
+    display: none;
+}
+
+#hideDisplay{
+    display: none !important;
+}
+
+.results{
+    margin: 5%;
+}
+
+.row{
+    border-top: 1px solid rgba(0,0,0,.125);;
+}
+
+.btn{
+    margin:5%;
+}

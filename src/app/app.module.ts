@@ -11,7 +11,7 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { HomeComponent } from './home/home.component';
 import { OffersComponent } from './offers/offers.component';
 import { MensFashionModule } from './fashion/fashion.module';
-import { OrderByPipePipe } from './shared/order-by-pipe.pipe';
+import { FilterComponent } from './shared/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { OrderByPipePipe } from './shared/order-by-pipe.pipe';
     ElectronicsComponent,
     HomeComponent,
     OffersComponent,
-    OrderByPipePipe,
+    FilterComponent,
 
   ],
   imports: [
@@ -36,6 +36,7 @@ import { OrderByPipePipe } from './shared/order-by-pipe.pipe';
       { path: 'electronics',component:ElectronicsComponent},
       { path: 'home', component:HomeComponent},
       { path: 'offers', component:OffersComponent},
+      { path: 'filterProducts', component:FilterComponent }
     ])
   ],
   providers: [],

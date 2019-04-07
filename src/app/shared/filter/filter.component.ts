@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent implements OnInit {
+  public setBoolean:boolean=false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  hideShow(){
+    this.setBoolean =! this.setBoolean;
+    console.log(this.setBoolean)
+  }
 }

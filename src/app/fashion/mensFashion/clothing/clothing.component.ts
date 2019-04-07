@@ -7,6 +7,7 @@ import { MensFashionClothingService } from './mens-fashion-clothing.service';
   styleUrls: ['./clothing.component.css'],
 })
 export class ClothingComponent implements OnInit {
+  public navbarFlag = true;
   private products: any;
   public sortOrder; 
   public sortedArray:any = [];
@@ -21,22 +22,6 @@ export class ClothingComponent implements OnInit {
         console.log("THis.products",this.products);
       })
         
-  }
-
-  bubbleSort(price) {
-    var done = false;
-    while (!done) {
-      done = true;
-      for (var i = 1; i < price.length; i += 1) {
-        if (price[i - 1].price > price[i].price) {
-          done = false;
-          var tmp = price[i - 1].price;
-          price[i - 1].price = price[i].price;
-          price[i].price = tmp;
-        }
-      }
-    }
-    return price; 
   }
 
   post(){
