@@ -1,43 +1,50 @@
 [
   {
-
     "name": "Full Hand Gray Tshirt",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt.jpeg?alt=media&token=a0980050-be09-4056-b7d7-1370a0e44a83",
-    "price" : 250.00
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt.jpeg?alt=media&token=a0980050-be09-4056-b7d7-1370a0e44a83",
+    "price": 320,
+    "category": "Tshirt"
   },
   {
     "name": "Full Hand Marron Tshirt",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt1.jpeg?alt=media&token=21d57ba2-6ac4-49f4-9e07-b350ae9db040",
-    "price" : 275.00
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt1.jpeg?alt=media&token=21d57ba2-6ac4-49f4-9e07-b350ae9db040",
+    "price": 275,
+    "category": "Tshirt"
   },
   {
     "name": "Bright Pink Tshirt",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt3.jpeg?alt=media&token=64eb2bb8-df5f-4e5d-8f3e-c5f5b18a4a8e",
-    "price" : 300.00
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt3.jpeg?alt=media&token=64eb2bb8-df5f-4e5d-8f3e-c5f5b18a4a8e",
+    "price": 300,
+    "category": "Tshirt"
   },
   {
     "name": "Mens Black Tshirt Full Sleeve",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt4.jpeg?alt=media&token=d882e672-ab90-4b21-86ff-2dc366411892",
-    "price" : 280.00
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt4.jpeg?alt=media&token=d882e672-ab90-4b21-86ff-2dc366411892",
+    "price": 280,
+    "category": "Tshirt"
   },
   {
     "name": "Derby Jeans Blue",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean1.jpeg?alt=media&token=eb8383c0-ed03-4cd3-867f-c1926f22ec7f",
-    "price" : "700.00"
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean1.jpeg?alt=media&token=eb8383c0-ed03-4cd3-867f-c1926f22ec7f",
+    "price": 700,
+    "category": "Jeans"
   },
   {
     "name": "Slim fit Blue Jeans",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean2.jpeg?alt=media&token=721838af-7ecb-4a37-ac77-f97f735add8a",
-    "price" : "900.00"
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean2.jpeg?alt=media&token=721838af-7ecb-4a37-ac77-f97f735add8a",
+    "price": 900,
+    "category": "Jeans"
   },
   {
     "name": "Polo White Jeans Mens",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean3.jpeg?alt=media&token=6935d595-5900-413f-afd2-6f354dc7ae06",
-    "price" : "980.00"
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean3.jpeg?alt=media&token=6935d595-5900-413f-afd2-6f354dc7ae06",
+    "price": 880,
+    "category": "Jeans"
   },
   {
     "name": "Casual Roadster Jeans",
-    "imageURL":"https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean4.jpeg?alt=media&token=ae2acc83-8ce8-4c16-8014-7b44acca58cc",
-    "price" : "1000.00"
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean4.jpeg?alt=media&token=ae2acc83-8ce8-4c16-8014-7b44acca58cc",
+    "price": 1020,
+    "category": "Jeans"
   }
 ]

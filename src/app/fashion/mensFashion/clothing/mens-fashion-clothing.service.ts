@@ -6,6 +6,8 @@ import 'rxjs/add/operator/map';
   providedIn: 'root'
 })
 export class MensFashionClothingService {
+  public results:number;
+  public category:any;
   public getUrl = "https://api.jsonbin.io/b/5c926ad508b9a73c3abce0db/1";
   public updateUrl = "https://api.jsonbin.io/b/5c91135008b9a73c3abb8d6a";
 
@@ -25,5 +27,21 @@ export class MensFashionClothingService {
         "versioning":"false"
       })
     });
+  }
+
+  setLength(length){
+    this.results = length;
+  }
+
+  setCategory(category){
+    this.category = category;
+  }
+
+  getLength(){
+    return this.results;
+  }
+
+  getCategory(){
+    return this.category;
   }
 }

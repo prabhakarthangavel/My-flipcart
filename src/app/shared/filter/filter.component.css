@@ -19,10 +19,19 @@
     margin: 5%;
 }
 
-.row{
-    border-top: 1px solid rgba(0,0,0,.125);;
+.borderStyle{
+    border-top: 1px solid rgba(0,0,0,0.5);;
 }
 
-.btn{
-    margin:5%;
+.btn1{
+    margin:4%;
+    background: rgb(251, 100, 27);
+    width: 30%;
+    box-shadow: none;
+    color: white;
+    float: right;
+}
+
+.close{
+    float: left;
 }
