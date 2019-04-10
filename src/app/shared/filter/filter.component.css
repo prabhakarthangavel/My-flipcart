@@ -1,18 +1,9 @@
 .img{
-    width:10px; 
     height: 15px;
 }
 
 .text-bold{
     font-weight: bold;
-}
-
-.navbar{
-    display: none;
-}
-
-#hideDisplay{
-    display: none !important;
 }
 
 .results{
@@ -34,4 +25,15 @@
 
 .close{
     float: left;
+    color: white;
+}
+
+.bg-light{
+    background-color: rgb(40, 116, 240) !important;
+}
+
+label{
+    color: white;
+    margin-left: 1rem !important;
+    font-size: large;
 }

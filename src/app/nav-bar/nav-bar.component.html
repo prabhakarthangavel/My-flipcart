@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-blue navbar-dark">
+<nav *ngIf="navbarService.navFlag" class="navbar navbar-expand-sm bg-blue navbar-dark">
   <span><img class="img-responsive img-class" routerLink="/" src="assets/images/logo.png"></span>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
     <span class="navbar-toggler-icon"></span>

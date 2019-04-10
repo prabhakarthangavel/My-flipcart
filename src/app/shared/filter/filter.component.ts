@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MensFashionClothingService } from '../../fashion/mensFashion/clothing/mens-fashion-clothing.service';
 import {Location} from '@angular/common';
+import { NavBarService } from '../../nav-bar/nav-bar.service';
 
 @Component({
   selector: 'app-filter',
@@ -13,9 +14,11 @@ export class FilterComponent implements OnInit {
   public setResults:number;
 
   constructor(private clothingService:MensFashionClothingService, 
-              private _location: Location) { }
+              private _location: Location,
+              private navbarService: NavBarService) { }
 
   ngOnInit() {
+    this.navbarService.setHide();
     this.setResults = this.clothingService.getLength();
     this.categoryList = this.clothingService.getCategory();
     }
@@ -26,6 +29,14 @@ export class FilterComponent implements OnInit {
 
   backClicked() {
     this._location.back();
+  }
+
+  categorySelect(event){
+    console.log("categoryselect",event);
+  }
+
+  ngOnDestroy(){
+    this.navbarService.setShow();
   }
 
 }
