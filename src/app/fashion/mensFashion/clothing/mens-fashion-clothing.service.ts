@@ -8,6 +8,7 @@ import 'rxjs/add/operator/map';
 export class MensFashionClothingService {
   public results:number;
   public category:any;
+  public selectedCategory:string;
   public getUrl = "https://api.jsonbin.io/b/5c926ad508b9a73c3abce0db/1";
   public updateUrl = "https://api.jsonbin.io/b/5c91135008b9a73c3abb8d6a";
 
@@ -43,5 +44,13 @@ export class MensFashionClothingService {
 
   getCategory(){
     return this.category;
+  }
+
+  setSelectedCategory(category){
+    this.selectedCategory = category;
+  }
+
+  getSelectedCategory(){
+    return this.selectedCategory;
   }
 }

@@ -32,6 +32,11 @@
     background-color: rgb(40, 116, 240) !important;
 }
 
+.selectedCategory{
+    color: rgb(40, 116, 240) !important;
+    display: contents !important;
+}
+
 label{
     color: white;
     margin-left: 1rem !important;
