@@ -9,6 +9,7 @@ export class MensFashionClothingService {
   public results:number;
   public category:any;
   public selectedCategory:string;
+  public selectedSize:string;
   public getUrl = "https://api.jsonbin.io/b/5c926ad508b9a73c3abce0db/1";
   public updateUrl = "https://api.jsonbin.io/b/5c91135008b9a73c3abb8d6a";
 
@@ -50,7 +51,15 @@ export class MensFashionClothingService {
     this.selectedCategory = category;
   }
 
+  setSelectedSize(size){
+    this.selectedSize = size;
+  }
+
   getSelectedCategory(){
     return this.selectedCategory;
+  }
+
+  getSelectedSize(){
+    return this.selectedSize;
   }
 }

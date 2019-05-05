@@ -11,9 +11,12 @@ import { Router } from '@angular/router';
 })
 export class FilterComponent implements OnInit {
   public setBoolean:boolean=false;
+  public setBoolean1:boolean=false;
   public categoryList=[];
+  public sizeList=["S","M","L"];
   public setResults:number;
   public selectedCategory:string;
+  public selectedSize:string;
 
   constructor(private clothingService:MensFashionClothingService, 
               private _location: Location,
@@ -21,16 +24,24 @@ export class FilterComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-    if(this.clothingService.getSelectedCategory()){
+    this.categoryList = this.clothingService.getCategory();
+    if(this.clothingService.getSelectedCategory() || this.clothingService.getSelectedSize()){
       this.selectedCategory = this.clothingService.getSelectedCategory();
+      this.selectedSize = this.clothingService.getSelectedSize();
+    }
+    if(this.categoryList){
+      this.selectedCategory = this.categoryList[0];
     }
     this.navbarService.setHide();
     this.setResults = this.clothingService.getLength();
-    this.categoryList = this.clothingService.getCategory();
     }
 
   hideShow(){
     this.setBoolean =! this.setBoolean;
+  }
+
+  hideShow1(){
+    this.setBoolean1 =! this.setBoolean1;
   }
 
   backClicked() {
@@ -42,9 +53,15 @@ export class FilterComponent implements OnInit {
     this.hideShow();
   }
 
+  sizeSelect(event){
+    this.selectedSize = event.target.innerText;
+    this.hideShow1();
+  }
+
   applyClicked(){
-    console.log("applyclicked",this.selectedCategory)
+    console.log("applyclicked",this.selectedCategory,this.selectedSize);
     this.clothingService.setSelectedCategory(this.selectedCategory);
+    this.clothingService.setSelectedSize(this.selectedSize);
     this.router.navigate(['fashion/mensClothing']);
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit, Pipe } from '@angular/core';
 import { MensFashionClothingService } from './mens-fashion-clothing.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-clothing',
@@ -15,11 +16,12 @@ export class ClothingComponent implements OnInit {
   public categoryList = [];
   public length:number;
   
-  constructor(private clothingService: MensFashionClothingService) { }
+  constructor(private clothingService: MensFashionClothingService,
+              private router:Router) { }
 
   ngOnInit() {
     // Usual listing the products
-    if(!this.clothingService.getSelectedCategory()){
+    if(!(this.clothingService.getSelectedCategory() || this.clothingService.getSelectedSize())){
       this.clothingService.getItems().subscribe(
         data => {
           this.products = data;
@@ -30,15 +32,17 @@ export class ClothingComponent implements OnInit {
         })
         this.clothingService.setCategory(this.categoryList);
     }
-    // Filtering the products based on the selection
+    // Filtering the products based on the selection Category & Size
     else{
-      console.log("this.lenght",this.length)
       this.clothingService.getItems().subscribe(
         data => {
           this.products1 = data;
           this.length = this.products1.length;
-          for(let i=0;i<this.length;i++){
-            if(data[i].category === this.clothingService.getSelectedCategory()){
+          for(let i=0;i<this.length;i++){ 
+            if(data[i].category === this.clothingService.getSelectedCategory() &&
+              (data[i].size[0] === this.clothingService.getSelectedSize() || 
+              data[i].size[1] === this.clothingService.getSelectedSize() || 
+              data[i].size[2] === this.clothingService.getSelectedSize())){
               this.products.push(data[i]);
             }
           }
@@ -90,5 +94,9 @@ export class ClothingComponent implements OnInit {
       found = false;
     }
   }
+
+  productSelect(name){
+    this.router.navigate(['productDetail',name]);
+  } 
 
 }

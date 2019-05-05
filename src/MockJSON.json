@@ -3,48 +3,98 @@
     "name": "Full Hand Gray Tshirt",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt.jpeg?alt=media&token=a0980050-be09-4056-b7d7-1370a0e44a83",
     "price": 320,
-    "category": "Tshirt"
+    "category": "Tshirt",
+    "size":["M","L"]
   },
   {
     "name": "Full Hand Marron Tshirt",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt1.jpeg?alt=media&token=21d57ba2-6ac4-49f4-9e07-b350ae9db040",
     "price": 275,
-    "category": "Tshirt"
+    "category": "Tshirt",
+    "size":["S","M"]
   },
   {
     "name": "Bright Pink Tshirt",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt3.jpeg?alt=media&token=64eb2bb8-df5f-4e5d-8f3e-c5f5b18a4a8e",
     "price": 300,
-    "category": "Tshirt"
+    "category": "Tshirt",
+    "size":["S","M"]
   },
   {
     "name": "Mens Black Tshirt Full Sleeve",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt4.jpeg?alt=media&token=d882e672-ab90-4b21-86ff-2dc366411892",
     "price": 280,
-    "category": "Tshirt"
+    "category": "Tshirt",
+    "size":["S","M"]
   },
   {
     "name": "Derby Jeans Blue",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean1.jpeg?alt=media&token=eb8383c0-ed03-4cd3-867f-c1926f22ec7f",
     "price": 700,
-    "category": "Jeans"
+    "category": "Jeans",
+    "size":["L"]
   },
   {
     "name": "Slim fit Blue Jeans",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean2.jpeg?alt=media&token=721838af-7ecb-4a37-ac77-f97f735add8a",
     "price": 900,
-    "category": "Jeans"
+    "category": "Jeans",
+    "size":["S","M"]
   },
   {
     "name": "Polo White Jeans Mens",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean3.jpeg?alt=media&token=6935d595-5900-413f-afd2-6f354dc7ae06",
     "price": 880,
-    "category": "Jeans"
+    "category": "Jeans",
+    "size":["S","L"]
   },
   {
     "name": "Casual Roadster Jeans",
     "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/Jean4.jpeg?alt=media&token=ae2acc83-8ce8-4c16-8014-7b44acca58cc",
     "price": 1020,
-    "category": "Jeans"
+    "category": "Jeans",
+    "size":["M","L"]
+  },
+  {
+    "name": "Blue Checked Shirt",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shirt1.jpg?alt=media&token=a972f7d8-bfd1-4925-a3d4-a79c19fa86d7",
+    "price": 899,
+    "category": "Shirts",
+    "size":["M","L"]
+  },
+  {
+    "name": "Mens Shirt Dark",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shirt2.jpg?alt=media&token=39af2670-be20-4a0c-9070-c21a08e47b43",
+    "price": 950,
+    "category": "Shirts",
+    "size":["L"]
+  },
+  {
+    "name": "Half Sleev Shirt",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shirt3.jpg?alt=media&token=30249074-4480-4a1c-8fbf-881aaa545f39",
+    "price": 780,
+    "category": "Shirts",
+    "size":["S","M"]
+  },
+  {
+    "name": "FullHand Shirt Mens",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shirt4.jpeg?alt=media&token=0e0a2d84-48b5-43cf-9712-856aee83a5b3",
+    "price": 1100,
+    "category": "Shirts",
+    "size":["S","L"]
+  },
+  {
+    "name": "Brown Mens Shorts",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shorts1.jpeg?alt=media&token=1cbe6d56-e25b-4c48-93bf-8170ea10748c",
+    "price": 450,
+    "category": "Shorts",
+    "size":["S","M"]
+  },
+  {
+    "name": "Mens Shorts",
+    "imageURL": "https://firebasestorage.googleapis.com/v0/b/my-flipcart.appspot.com/o/shorts2.jpg?alt=media&token=eb79cc8f-2583-4ab8-9d3a-b81218b7f7dd",
+    "price": 500,
+    "category": "Shorts",
+    "size":["S","L"]
   }
 ]

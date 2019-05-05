@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { OffersComponent } from './offers/offers.component';
 import { MensFashionModule } from './fashion/fashion.module';
 import { FilterComponent } from './shared/filter/filter.component';
+import { ProductDetailComponent } from './shared/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FilterComponent } from './shared/filter/filter.component';
     HomeComponent,
     OffersComponent,
     FilterComponent,
+    ProductDetailComponent,
 
   ],
   imports: [
@@ -36,7 +38,8 @@ import { FilterComponent } from './shared/filter/filter.component';
       { path: 'electronics',component:ElectronicsComponent},
       { path: 'home', component:HomeComponent},
       { path: 'offers', component:OffersComponent},
-      { path: 'filterProducts', component:FilterComponent }
+      { path: 'filterProducts', component:FilterComponent },
+      { path: 'productDetail', component: ProductDetailComponent}
     ])
   ],
   providers: [],

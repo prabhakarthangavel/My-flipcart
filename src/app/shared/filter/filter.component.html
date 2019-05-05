@@ -6,18 +6,19 @@
       <label>Filters</label>
   </div>
 </nav>
+
   <ul class="list-group">
+    <!-- Category List -->
     <a (click)="hideShow()">
         <li class="text-bold list-group-item d-flex justify-content-between align-items-center">
             Category <br>
-            <label class="selectedCategory">{{selectedCategory}} </label>
+            <label class="selectedCategory">{{selectedCategory}}</label>
             <img class="img img-responsive" src="assets/images/chevron-down.png">  
           </li>
     </a>
-  
     <ng-container *ngIf="setBoolean">
       <ul *ngFor="let category of categoryList" class="list-group">
-        <a >  
+        <a>  
           <li (click)="categorySelect($event)" name="list" value={{category}} class="list-group-item d-flex justify-content-between align-items-center">
             {{category}}
           </li>
@@ -25,11 +26,23 @@
       </ul>
     </ng-container>
     
-    <li class="text-bold list-group-item d-flex justify-content-between align-items-center">
-      Size <br>
-      <label class="selectedCategory"></label>
-      <img class="img img-responsive" src="assets/images/chevron-down.png">
-    </li>
+    <!-- Size List -->
+    <a (click)="hideShow1()">
+        <li class="text-bold list-group-item d-flex justify-content-between align-items-center">
+            Size <br>
+            <label class="selectedCategory">{{selectedSize}}</label>
+            <img class="img img-responsive" src="assets/images/chevron-down.png">
+          </li>
+    </a>
+    <ng-container *ngIf="setBoolean1">
+        <ul *ngFor="let size of sizeList" class="list-group">
+          <a>  
+            <li (click)="sizeSelect($event)" name="list" class="list-group-item d-flex justify-content-between align-items-center">
+              {{size}}
+            </li>
+          </a>
+        </ul>
+    </ng-container>
   </ul>
   
   <!-- Footer -->
