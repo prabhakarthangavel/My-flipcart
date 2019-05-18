@@ -39,7 +39,7 @@ import { ProductDetailComponent } from './shared/product-detail/product-detail.c
       { path: 'home', component:HomeComponent},
       { path: 'offers', component:OffersComponent},
       { path: 'filterProducts', component:FilterComponent },
-      { path: 'productDetail', component: ProductDetailComponent}
+      { path: 'productDetail/:name', component: ProductDetailComponent}
     ])
   ],
   providers: [],

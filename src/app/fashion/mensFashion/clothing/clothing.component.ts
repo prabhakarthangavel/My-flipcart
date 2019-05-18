@@ -97,6 +97,7 @@ export class ClothingComponent implements OnInit {
 
   productSelect(name){
     this.router.navigate(['productDetail',name]);
+
   } 
 
 }
