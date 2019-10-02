@@ -1,0 +1,25 @@
+.border{
+    border: 1px solid transparent; 
+    height: 100%;
+    max-width: 50%;
+    padding-top: 10px;
+}
+
+.col{
+    width:100% !important;
+}
+
+.text{
+vertical-align: middle;
+font-size: 15px;
+padding-top: 4px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.price{
+vertical-align: middle;
+font-size: 15px;
+font-weight: bold;
+}

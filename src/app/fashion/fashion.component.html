@@ -10,14 +10,14 @@
     </div> 
     <div *ngIf="showMen" class="column box-class"> 
       <div class="whiteDiv">
-        <a routerLink="/fashion/mensAccessories">
-            <span><img class="img-responsive img-class-small" src="assets/images/accessories.jpg"></span>
+        <a (click)="productSelect($event.target.id)" >
+            <span ><img id="mensAccessories" class="img-responsive img-class-small" src="assets/images/accessories.jpg"></span>
         </a>
-        <a routerLink="/fashion/mensClothing">
-          <span><img class="img-responsive img-class-small" src="assets/images/clothing.jpg"></span>
+        <a (click)="productSelect($event.target.id)">
+          <span><img id="mensClothing" class="img-responsive img-class-small" src="assets/images/clothing.jpg"></span>
         </a>
-        <a routerLink="/fashion/mensFootwear">
-          <span><img class="img-responsive img-class-small" src="assets/images/footwear.jpg"></span>
+        <a (click)="productSelect($event.target.id)">
+          <span><img id="mensFootwear" class="img-responsive img-class-small" src="assets/images/footwear.jpg"></span>
         </a>
       </div>
     </div>

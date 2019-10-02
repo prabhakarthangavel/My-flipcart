@@ -6,12 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accessories.component.css']
 })
 export class AccessoriesComponent implements OnInit {
-  public products:any = ["https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt1.jpeg?alt=media&token=21d57ba2-6ac4-49f4-9e07-b350ae9db040",
-                           "https://firebasestorage.googleapis.com/v0/b/my-music01.appspot.com/o/tshirt.jpeg?alt=media&token=7c52dfd0-ee58-4eec-9665-223d4a692335"]
-
+  public sortOrder;
+  public sortedArray = [];
+  public products:any =[];
   constructor() { }
 
   ngOnInit() {
   }
 
+  getNotification(event) {
+    this.sortOrder = event;
+    this.sortArray();
+  }
+
+  sortArray() {
+    if (this.sortOrder == "assending") {
+      this.sortedArray = this.products.sort((a, b) => a.price - b.price)
+    }
+    else {
+      this.sortedArray = this.products.sort((a, b) => b.price - a.price)
+    }
+  }
 }

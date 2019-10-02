@@ -54,7 +54,7 @@ export class ClothingComponent implements OnInit {
   }
 
   post() {
-    let post = { title: "test1" };
+    let post = { title: "test2" };
 
     this.clothingService.putItems(post).subscribe(
       data => {
@@ -97,7 +97,6 @@ export class ClothingComponent implements OnInit {
 
   productSelect(name){
     this.router.navigate(['productDetail',name]);
-
   } 
 
 }

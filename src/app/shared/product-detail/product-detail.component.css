@@ -1,0 +1,16 @@
+
+.close{
+    float: left;
+    color: white;
+}
+
+.bg-light{
+    background-color: rgb(40, 116, 240) !important;
+}
+
+.back{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
